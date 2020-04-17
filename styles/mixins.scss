@@ -1,0 +1,20 @@
+@mixin font-white {
+  color: colors.$white;
+}
+
+@mixin font-700 {
+  font-weight: 700;
+}
+
+@mixin font-14 {
+  font-size: 0.875rem;
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin w-100-h-auto {
+  width: 100%;
+  height: auto;
+}

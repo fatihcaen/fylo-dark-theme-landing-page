@@ -1,0 +1,366 @@
+@use 'colors';
+@import "mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+$open-sans: "Open Sans", sans-serif;
+$raleway: "Raleway", sans-serif;
+
+body {
+  font-family: $open-sans;
+  margin: 0;
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $raleway;
+  @include font-700;
+}
+
+// Navbar
+
+.navbar {
+  background-color: colors.$intro-bg;
+  .logo {
+    img {
+      @include w-100-h-auto;
+    }
+  }
+
+  .navbar-links {
+    .link {
+      @include font-white;
+      @include font-14;
+    }
+  }
+}
+
+////////////////////// Intro
+
+#intro {
+  background: url(../assets/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: colors.$intro-bg;
+}
+
+.intro {
+  padding-bottom: 13rem;
+  .illustration {
+    grid-area: illustration;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .title {
+    grid-area: title;
+    h1 {
+      @include font-white;
+      @include text-center;
+    }
+  }
+
+  .paragraph {
+    grid-area: paragraph;
+    p {
+      @include font-white;
+      @include text-center;
+    }
+  }
+
+  .get-started {
+    grid-area: get-started;
+
+    button {
+      background: colors.$gradient;
+      border: none;
+      border-radius: 3rem;
+      @include font-white;
+      padding: 1rem 5rem;
+    }
+  }
+}
+
+////////////////////// Main
+
+#main {
+  background-color: colors.$main-bg;
+}
+
+.main {
+  padding-bottom: 19rem;
+
+  ////////////////////// Features
+
+  .features {
+    grid-area: features;
+
+    .first {
+      grid-area: first;
+    }
+
+    .second {
+      grid-area: second;
+    }
+
+    .third {
+      grid-area: third;
+    }
+
+    .fourth {
+      grid-area: fourth;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+      .icon {
+        grid-area: icon;
+      }
+
+      .title {
+        grid-area: title;
+
+        h3 {
+          @include font-white;
+        }
+      }
+
+      .paragraph {
+        grid-area: paragraph;
+
+        p {
+          @include font-white;
+          @include text-center;
+        }
+      }
+    }
+  }
+
+  ////////////////////// Productive
+
+  .productive {
+    padding-top: 5.5rem;
+    grid-area: productive;
+
+    .illustration {
+      grid-area: illustration;
+
+      img {
+        @include w-100-h-auto;
+      }
+    }
+
+    .slogan {
+      grid-area: slogan;
+
+      .title {
+        grid-area: title;
+
+        h1 {
+          @include font-white;
+        }
+      }
+
+      .paragraph {
+        grid-area: paragraph;
+
+        p {
+          @include font-white;
+        }
+      }
+
+      .link {
+        grid-area: link;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 2px solid colors.$cyan;
+        width: fit-content;
+        padding-bottom: 0.5rem;
+        color: colors.$cyan;
+
+        img {
+          width: 1.3rem;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  ////////////////////// Comments
+
+  .comments {
+    padding-top: 10rem;
+    grid-area: comments;
+
+    .first {
+      grid-area: first;
+    }
+
+    .second {
+      grid-area: second;
+    }
+
+    .third {
+      grid-area: third;
+    }
+
+    .fourth {
+      grid-area: fourth;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+      background-color: colors.$testimonials-bg;
+      border-radius: 0.3rem;
+      padding: 1.5rem;
+
+      .paragraph {
+        p {
+          @include font-white;
+          font-size: 0.8rem;
+          line-height: 1.5;
+        }
+      }
+
+      .person {
+        display: flex;
+        flex-flow: row;
+
+        .photo {
+          width: 1.7rem;
+          margin-right: 0.5rem;
+
+          img {
+            @include w-100-h-auto;
+            border-radius: 50%;
+          }
+        }
+
+        .details {
+          .name,
+          .job {
+            @include font-white;
+          }
+
+          .name {
+            @include font-700;
+            font-size: 0.7rem;
+          }
+
+          .job {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+////////////////////// Footer
+
+#footer {
+  background-color: colors.$footer-bg;
+
+  .footer {
+    .logo {
+      grid-area: logo;
+    }
+
+    .bottom {
+      grid-area: bottom;
+
+      .address {
+        grid-area: address;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        @include font-white;
+        font-size: 0.875rem;
+        line-height: 1.5;
+
+        img {
+          margin-right: 1rem;
+          margin-top: 0.2rem;
+        }
+      }
+
+      .tel-email {
+        grid-area: tel-email;
+        @include font-white;
+        font-size: 0.875rem;
+
+        .tel,
+        .email {
+          display: flex;
+          flex-flow: row;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          img {
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      .first,
+      .second {
+        list-style-type: none;
+
+        .link {
+          @include font-white;
+          font-size: 0.875rem;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .first {
+        grid-area: first;
+      }
+
+      .second {
+        grid-area: second;
+      }
+
+      .social-icons {
+        grid-area: social-icons;
+
+        img {
+          border: 1px solid colors.$white;
+          padding: 0.3rem;
+          border-radius: 50%;
+          width: 1rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .credits {
+      grid-area: credits;
+      font-family: $raleway;
+      @include font-white;
+
+      a {
+        color: colors.$cyan;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@import "responsive";

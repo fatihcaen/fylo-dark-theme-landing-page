@@ -1,0 +1,725 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.navbar {
+  background-color: #1c2431;
+}
+.navbar .logo img {
+  width: 100%;
+  height: auto;
+}
+.navbar .navbar-links .link {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+#intro {
+  background: url(../assets/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: #1c2431;
+}
+
+.intro {
+  padding-bottom: 13rem;
+}
+.intro .illustration {
+  grid-area: illustration;
+}
+.intro .illustration img {
+  width: 100%;
+  height: auto;
+}
+.intro .title {
+  grid-area: title;
+}
+.intro .title h1 {
+  color: #fff;
+  text-align: center;
+}
+.intro .paragraph {
+  grid-area: paragraph;
+}
+.intro .paragraph p {
+  color: #fff;
+  text-align: center;
+}
+.intro .get-started {
+  grid-area: get-started;
+}
+.intro .get-started button {
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  border: none;
+  border-radius: 3rem;
+  color: #fff;
+  padding: 1rem 5rem;
+}
+
+#main {
+  background-color: #181f2a;
+}
+
+.main {
+  padding-bottom: 19rem;
+}
+.main .features {
+  grid-area: features;
+}
+.main .features .first {
+  grid-area: first;
+}
+.main .features .second {
+  grid-area: second;
+}
+.main .features .third {
+  grid-area: third;
+}
+.main .features .fourth {
+  grid-area: fourth;
+}
+.main .features .first .icon,
+.main .features .second .icon,
+.main .features .third .icon,
+.main .features .fourth .icon {
+  grid-area: icon;
+}
+.main .features .first .title,
+.main .features .second .title,
+.main .features .third .title,
+.main .features .fourth .title {
+  grid-area: title;
+}
+.main .features .first .title h3,
+.main .features .second .title h3,
+.main .features .third .title h3,
+.main .features .fourth .title h3 {
+  color: #fff;
+}
+.main .features .first .paragraph,
+.main .features .second .paragraph,
+.main .features .third .paragraph,
+.main .features .fourth .paragraph {
+  grid-area: paragraph;
+}
+.main .features .first .paragraph p,
+.main .features .second .paragraph p,
+.main .features .third .paragraph p,
+.main .features .fourth .paragraph p {
+  color: #fff;
+  text-align: center;
+}
+.main .productive {
+  padding-top: 5.5rem;
+  grid-area: productive;
+}
+.main .productive .illustration {
+  grid-area: illustration;
+}
+.main .productive .illustration img {
+  width: 100%;
+  height: auto;
+}
+.main .productive .slogan {
+  grid-area: slogan;
+}
+.main .productive .slogan .title {
+  grid-area: title;
+}
+.main .productive .slogan .title h1 {
+  color: #fff;
+}
+.main .productive .slogan .paragraph {
+  grid-area: paragraph;
+}
+.main .productive .slogan .paragraph p {
+  color: #fff;
+}
+.main .productive .slogan .link {
+  grid-area: link;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px solid #65e2d9;
+  width: fit-content;
+  padding-bottom: 0.5rem;
+  color: #65e2d9;
+}
+.main .productive .slogan .link img {
+  width: 1.3rem;
+  height: auto;
+}
+.main .comments {
+  padding-top: 10rem;
+  grid-area: comments;
+}
+.main .comments .first {
+  grid-area: first;
+}
+.main .comments .second {
+  grid-area: second;
+}
+.main .comments .third {
+  grid-area: third;
+}
+.main .comments .fourth {
+  grid-area: fourth;
+}
+.main .comments .first,
+.main .comments .second,
+.main .comments .third,
+.main .comments .fourth {
+  background-color: #202a3c;
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+}
+.main .comments .first .paragraph p,
+.main .comments .second .paragraph p,
+.main .comments .third .paragraph p,
+.main .comments .fourth .paragraph p {
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.main .comments .first .person,
+.main .comments .second .person,
+.main .comments .third .person,
+.main .comments .fourth .person {
+  display: flex;
+  flex-flow: row;
+}
+.main .comments .first .person .photo,
+.main .comments .second .person .photo,
+.main .comments .third .person .photo,
+.main .comments .fourth .person .photo {
+  width: 1.7rem;
+  margin-right: 0.5rem;
+}
+.main .comments .first .person .photo img,
+.main .comments .second .person .photo img,
+.main .comments .third .person .photo img,
+.main .comments .fourth .person .photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.main .comments .first .person .details .name,
+.main .comments .first .person .details .job,
+.main .comments .second .person .details .name,
+.main .comments .second .person .details .job,
+.main .comments .third .person .details .name,
+.main .comments .third .person .details .job,
+.main .comments .fourth .person .details .name,
+.main .comments .fourth .person .details .job {
+  color: #fff;
+}
+.main .comments .first .person .details .name,
+.main .comments .second .person .details .name,
+.main .comments .third .person .details .name,
+.main .comments .fourth .person .details .name {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.main .comments .first .person .details .job,
+.main .comments .second .person .details .job,
+.main .comments .third .person .details .job,
+.main .comments .fourth .person .details .job {
+  font-size: 0.6rem;
+}
+
+#footer {
+  background-color: #0b1523;
+}
+#footer .footer .logo {
+  grid-area: logo;
+}
+#footer .footer .bottom {
+  grid-area: bottom;
+}
+#footer .footer .bottom .address {
+  grid-area: address;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+#footer .footer .bottom .address img {
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+#footer .footer .bottom .tel-email {
+  grid-area: tel-email;
+  color: #fff;
+  font-size: 0.875rem;
+}
+#footer .footer .bottom .tel-email .tel,
+#footer .footer .bottom .tel-email .email {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#footer .footer .bottom .tel-email .tel img,
+#footer .footer .bottom .tel-email .email img {
+  margin-right: 1rem;
+}
+#footer .footer .bottom .first,
+#footer .footer .bottom .second {
+  list-style-type: none;
+}
+#footer .footer .bottom .first .link,
+#footer .footer .bottom .second .link {
+  color: #fff;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+#footer .footer .bottom .first {
+  grid-area: first;
+}
+#footer .footer .bottom .second {
+  grid-area: second;
+}
+#footer .footer .bottom .social-icons {
+  grid-area: social-icons;
+}
+#footer .footer .bottom .social-icons img {
+  border: 1px solid #fff;
+  padding: 0.3rem;
+  border-radius: 50%;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+#footer .footer .credits {
+  grid-area: credits;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+#footer .footer .credits a {
+  color: #65e2d9;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  .navbar {
+    padding: 1.5rem 1rem;
+    background-color: #1c2431;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto;
+  }
+  .navbar .navbar-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: flex-end;
+    column-gap: 0.5rem;
+  }
+
+  #intro {
+    background: url(../assets/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1c2431;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "illustration" "title" "paragraph" "get-started";
+    justify-items: center;
+  }
+  .intro .title h1 {
+    font-size: 1.6rem;
+  }
+  .intro .paragraph p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "features" "productive" "comments";
+  }
+  .main .features {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "first" "second" "third" "fourth";
+    row-gap: 4rem;
+  }
+  .main .features .feature {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 15% auto;
+    grid-template-areas: "icon" "title" "paragraph";
+    justify-items: center;
+  }
+  .main .features .first .paragraph p,
+.main .features .second .paragraph p,
+.main .features .third .paragraph p,
+.main .features .fourth .paragraph p {
+    padding: 0.5rem;
+  }
+
+  .productive {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "illustration" "slogan";
+  }
+  .productive .slogan {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "title" "paragraph" "link";
+  }
+  .productive .slogan .title h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .productive .slogan .paragraph p {
+    font-size: 0.875rem;
+    padding: 0.7rem;
+  }
+  .productive .slogan .link {
+    margin-left: 0.7rem;
+  }
+  .productive .slogan .link p {
+    font-size: 1rem;
+  }
+
+  .comments {
+    background: url(../assets/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 3rem 8rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "first" "second" "third";
+    row-gap: 2rem;
+  }
+  .comments .first,
+.comments .second,
+.comments .third,
+.comments .fourth {
+    margin: 0 1.5rem;
+  }
+
+  .footer {
+    padding: 15rem 2rem 1rem 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "logo" "bottom" "credits";
+    row-gap: 2rem;
+  }
+  .footer .bottom {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "address" "tel-email" "first" "second" "social-icons";
+    justify-items: flex-start;
+    align-items: flex-start;
+    row-gap: 2rem;
+  }
+  .footer .bottom .social-icons {
+    justify-self: center;
+  }
+  .footer .credits {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    row-gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .productive .slogan .title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 12% 1fr;
+    grid-template-rows: auto;
+  }
+  .navbar .navbar-links {
+    display: grid;
+    grid-template-columns: repeat(3, 10%);
+    grid-template-rows: auto;
+    justify-content: end;
+    align-content: center;
+  }
+
+  #intro {
+    background-position: center 30rem;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: ". illustration ." ". title ." ". paragraph ." ". get-started .";
+  }
+  .intro .title h1 {
+    font-size: 2rem;
+  }
+  .intro .paragraph p {
+    font-size: 1.1rem;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "features" "productive" "comments";
+  }
+  .main .features {
+    display: grid;
+    grid-template-columns: 15% repeat(2, auto) 15%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: ". first second ." ". third fourth .";
+    row-gap: 6rem;
+    column-gap: 4rem;
+  }
+  .main .features .feature {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 20% auto;
+    grid-template-areas: "icon" "title" "paragraph";
+  }
+  .main .features .first .paragraph p,
+.main .features .second .paragraph p,
+.main .features .third .paragraph p,
+.main .features .fourth .paragraph p {
+    font-size: 0.8rem;
+  }
+
+  .productive {
+    display: grid;
+    grid-template-columns: 5% auto 35% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: ". illustration slogan .";
+    column-gap: 2.5rem;
+  }
+  .productive .slogan {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "title" "paragraph" "link";
+    align-content: center;
+    justify-content: center;
+  }
+  .productive .slogan .title h1 {
+    font-size: 2.6rem;
+    text-align: left;
+    margin: 0;
+  }
+  .productive .slogan .paragraph p {
+    font-size: 0.875rem;
+    padding: 0;
+  }
+  .productive .slogan .link {
+    margin-left: 0;
+  }
+  .productive .slogan .link p {
+    font-size: 1rem;
+  }
+
+  .comments {
+    background: url(../assets/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 7rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-template-areas: ". first second third .";
+    column-gap: 1.5rem;
+  }
+  .comments .first,
+.comments .second,
+.comments .third,
+.comments .fourth {
+    margin: 0;
+  }
+
+  .footer {
+    padding: 9rem 2.5rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "logo" "bottom" "credits";
+    row-gap: 2rem;
+  }
+  .footer .bottom {
+    display: grid;
+    grid-template-columns: 25% repeat(4, auto);
+    grid-template-rows: auto;
+    grid-template-areas: "address tel-email first second social-icons";
+    justify-items: center;
+    align-items: flex-start;
+  }
+  .footer .credits {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 12% 1fr;
+    grid-template-rows: auto;
+  }
+  .navbar .navbar-links {
+    display: grid;
+    grid-template-columns: repeat(3, 10%);
+    grid-template-rows: auto;
+    justify-content: end;
+    align-content: center;
+  }
+
+  #intro {
+    background-position: center 30rem;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: ". illustration ." ". title ." ". paragraph ." ". get-started .";
+  }
+  .intro .title h1 {
+    font-size: 2rem;
+  }
+  .intro .paragraph p {
+    font-size: 1.1rem;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "features" "productive" "comments";
+  }
+  .main .features {
+    display: grid;
+    grid-template-columns: 15% repeat(2, auto) 15%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: ". first second ." ". third fourth .";
+    row-gap: 6rem;
+    column-gap: 4rem;
+  }
+  .main .features .feature {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 20% auto;
+    grid-template-areas: "icon" "title" "paragraph";
+  }
+  .main .features .first .paragraph p,
+.main .features .second .paragraph p,
+.main .features .third .paragraph p,
+.main .features .fourth .paragraph p {
+    font-size: 0.8rem;
+  }
+
+  .productive {
+    display: grid;
+    grid-template-columns: 5% auto 35% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: ". illustration slogan .";
+    column-gap: 2.5rem;
+  }
+  .productive .slogan {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "title" "paragraph" "link";
+  }
+  .productive .slogan .title {
+    align-self: flex-end;
+  }
+  .productive .slogan .title h1 {
+    font-size: 2.6rem;
+    text-align: left;
+    margin: 0;
+  }
+  .productive .slogan .paragraph p {
+    font-size: 0.875rem;
+    padding: 0;
+  }
+  .productive .slogan .link {
+    margin-left: 0;
+  }
+  .productive .slogan .link p {
+    font-size: 1rem;
+  }
+
+  .comments {
+    background: url(../assets/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 7rem 8rem;
+    display: grid;
+    grid-template-columns: 5% repeat(3, auto) 5%;
+    grid-template-rows: auto;
+    grid-template-areas: ". first second third .";
+    column-gap: 3rem;
+  }
+  .comments .first,
+.comments .second,
+.comments .third,
+.comments .fourth {
+    margin: 0;
+  }
+
+  .footer {
+    padding: 9rem 2.5rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "logo" "bottom" "credits";
+    row-gap: 2rem;
+  }
+  .footer .bottom {
+    display: grid;
+    grid-template-columns: 25% repeat(4, auto);
+    grid-template-rows: auto;
+    grid-template-areas: "address tel-email first second social-icons";
+    justify-items: center;
+    align-items: flex-start;
+  }
+  .footer .credits {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

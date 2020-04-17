@@ -1,0 +1,593 @@
+@media (min-width: 320px) {
+  ////////////////////// Navbar
+
+  .navbar {
+    padding: 1.5rem 1rem;
+    background-color: colors.$intro-bg;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto;
+
+    .navbar-links {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: auto;
+      align-content: center;
+      justify-content: flex-end;
+      column-gap: 0.5rem;
+    }
+  }
+
+  ////////////////////// Intro
+
+  #intro {
+    background: url(../assets/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: colors.$intro-bg;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "illustration"
+      "title"
+      "paragraph"
+      "get-started";
+    justify-items: center;
+
+    .title {
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+
+    .paragraph {
+      p {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  //////////////////////Main
+
+  .main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "features"
+      "productive"
+      "comments";
+
+    ////////////////////// Features
+
+    .features {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+        "first"
+        "second"
+        "third"
+        "fourth";
+      row-gap: 4rem;
+
+      ////////////////////// Feature
+
+      .feature {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 15% auto;
+        grid-template-areas:
+          "icon"
+          "title"
+          "paragraph";
+        justify-items: center;
+      }
+
+      .first,
+      .second,
+      .third,
+      .fourth {
+        .paragraph {
+          p {
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  ///////////////////// Productive
+
+  .productive {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "illustration"
+      "slogan";
+
+    .slogan {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+        "title"
+        "paragraph"
+        "link";
+
+      .title {
+        h1 {
+          font-size: 1.3rem;
+          @include text-center;
+        }
+      }
+
+      .paragraph {
+        p {
+          font-size: 0.875rem;
+          padding: 0.7rem;
+        }
+      }
+
+      .link {
+        margin-left: 0.7rem;
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  ////////////////////// Comments
+
+  .comments {
+    background: url(../assets/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 3rem 8rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "first"
+      "second"
+      "third";
+    row-gap: 2rem;
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+      margin: 0 1.5rem;
+    }
+  }
+
+  .footer {
+    padding: 15rem 2rem 1rem 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "logo"
+      "bottom"
+      "credits";
+    row-gap: 2rem;
+
+    .bottom {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas:
+        "address"
+        "tel-email"
+        "first"
+        "second"
+        "social-icons";
+      justify-items: flex-start;
+      align-items: flex-start;
+      row-gap: 2rem;
+
+      .social-icons {
+        justify-self: center;
+      }
+    }
+
+    .credits {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      justify-items: center;
+      row-gap: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .productive {
+    .slogan {
+      .title {
+        h1 {
+          font-size: 2.5rem;
+          @include text-center;
+        }
+      }
+    }
+  }
+}
+
+////////////////////// 992px
+
+@media (min-width: 992px) {
+  ////////////////////// Navbar
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 12% 1fr;
+    grid-template-rows: auto;
+
+    .navbar-links {
+      display: grid;
+      grid-template-columns: repeat(3, 10%);
+      grid-template-rows: auto;
+      justify-content: end;
+      align-content: center;
+    }
+  }
+
+  ////////////////////// Intro
+
+  #intro {
+    background-position: center 30rem;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      ". illustration ."
+      ". title ."
+      ". paragraph ."
+      ". get-started .";
+    .title {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .paragraph {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  ////////////////////// Main
+
+  .main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "features"
+      "productive"
+      "comments";
+
+    .features {
+      display: grid;
+      grid-template-columns: 15% repeat(2, auto) 15%;
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+        ". first second ."
+        ". third fourth .";
+      row-gap: 6rem;
+      column-gap: 4rem;
+
+      .feature {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 20% auto;
+        grid-template-areas:
+          "icon"
+          "title"
+          "paragraph";
+      }
+
+      .first,
+      .second,
+      .third,
+      .fourth {
+        .paragraph {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  ////////////////////// Productive
+
+  .productive {
+    display: grid;
+    grid-template-columns: 5% auto 35% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: ". illustration slogan .";
+    column-gap: 2.5rem;
+
+    .slogan {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+        "title"
+        "paragraph"
+        "link";
+      align-content: center;
+      justify-content: center;
+
+      .title {
+        h1 {
+          font-size: 2.6rem;
+          text-align: left;
+          margin: 0;
+        }
+      }
+
+      .paragraph {
+        p {
+          font-size: 0.875rem;
+          padding: 0;
+        }
+      }
+
+      .link {
+        margin-left: 0;
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  ////////////////////// Comments
+
+  .comments {
+    background: url(../assets/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 7rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-template-areas: ". first second third .";
+    column-gap: 1.5rem;
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+      margin: 0;
+    }
+  }
+
+  ////////////////////// Footer
+
+  .footer {
+    padding: 9rem 2.5rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "logo"
+      "bottom"
+      "credits";
+    row-gap: 2rem;
+
+    .bottom {
+      display: grid;
+      grid-template-columns: 25% repeat(4, auto);
+      grid-template-rows: auto;
+      grid-template-areas: "address tel-email first second social-icons";
+      justify-items: center;
+      align-items: flex-start;
+    }
+
+    .credits {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+      justify-items: center;
+    }
+  }
+}
+
+////////////////////// 1200px
+
+@media (min-width: 1200px) {
+  ////////////////////// Navbar
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 12% 1fr;
+    grid-template-rows: auto;
+
+    .navbar-links {
+      display: grid;
+      grid-template-columns: repeat(3, 10%);
+      grid-template-rows: auto;
+      justify-content: end;
+      align-content: center;
+    }
+  }
+
+  ////////////////////// Intro
+
+  #intro {
+    background-position: center 30rem;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      ". illustration ."
+      ". title ."
+      ". paragraph ."
+      ". get-started .";
+    .title {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .paragraph {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  ////////////////////// Main
+
+  .main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "features"
+      "productive"
+      "comments";
+
+    .features {
+      display: grid;
+      grid-template-columns: 15% repeat(2, auto) 15%;
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+        ". first second ."
+        ". third fourth .";
+      row-gap: 6rem;
+      column-gap: 4rem;
+
+      .feature {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 20% auto;
+        grid-template-areas:
+          "icon"
+          "title"
+          "paragraph";
+      }
+
+      .first,
+      .second,
+      .third,
+      .fourth {
+        .paragraph {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  ////////////////////// Productive
+
+  .productive {
+    display: grid;
+    grid-template-columns: 5% auto 35% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: ". illustration slogan .";
+    column-gap: 2.5rem;
+
+    .slogan {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+        "title"
+        "paragraph"
+        "link";
+
+      .title {
+        align-self: flex-end;
+        h1 {
+          font-size: 2.6rem;
+          text-align: left;
+          margin: 0;
+        }
+      }
+
+      .paragraph {
+        p {
+          font-size: 0.875rem;
+          padding: 0;
+        }
+      }
+
+      .link {
+        margin-left: 0;
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  ////////////////////// Comments
+
+  .comments {
+    background: url(../assets/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 7rem 8rem;
+    display: grid;
+    grid-template-columns: 5% repeat(3, auto) 5%;
+    grid-template-rows: auto;
+    grid-template-areas: ". first second third .";
+    column-gap: 3rem;
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+      margin: 0;
+    }
+  }
+
+  ////////////////////// Footer
+
+  .footer {
+    padding: 9rem 2.5rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "logo"
+      "bottom"
+      "credits";
+    row-gap: 2rem;
+
+    .bottom {
+      display: grid;
+      grid-template-columns: 25% repeat(4, auto);
+      grid-template-rows: auto;
+      grid-template-areas: "address tel-email first second social-icons";
+      justify-items: center;
+      align-items: flex-start;
+    }
+
+    .credits {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+      justify-items: center;
+    }
+  }
+}
