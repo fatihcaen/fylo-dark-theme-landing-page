@@ -171,10 +171,9 @@
   ////////////////////// Early Access
 
   .early-access {
-    padding: 2rem 0;
-    right: 1rem;
-    left: 1rem;
-    bottom: -225rem;
+    margin: auto;
+    width: 75%;
+    padding: 1rem;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
@@ -182,7 +181,7 @@
       "title"
       "paragraph"
       "bottom";
-
+    transform: translateY(-8rem);
     .title {
       h1 {
         font-size: 1rem;
@@ -210,7 +209,7 @@
   }
 
   .footer {
-    padding: 15rem 2rem 1rem 2rem;
+    padding: 0rem 2rem 1rem 2rem;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
@@ -267,8 +266,6 @@
 
 @media (min-width: 576px) {
   .early-access {
-    bottom: -220rem;
-
     .title {
       h1 {
         font-size: 1.5rem;
@@ -300,8 +297,6 @@
   }
 
   .early-access {
-    bottom: -234rem;
-
     .title {
       h1 {
         font-size: 1.7rem;
@@ -476,9 +471,8 @@
   ////////////////////// Early Access
 
   .early-access {
-    right: 13rem;
-    left: 13rem;
-    bottom: -138rem;
+    margin: auto;
+    width: 50%;
     padding: 2.5rem;
     display: grid;
     grid-template-columns: auto;
@@ -488,6 +482,7 @@
       "paragraph"
       "bottom";
     row-gap: 1rem;
+    transform: translateY(-8rem);
 
     .paragraph {
       width: 80%;
@@ -512,7 +507,7 @@
   ////////////////////// Footer
 
   .footer {
-    padding: 9rem 2.5rem 5rem 2.5rem;
+    padding: 0 2.5rem 5rem 2.5rem;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
@@ -697,9 +692,8 @@
   ////////////////////// Early Access
 
   .early-access {
-    right: 13rem;
-    left: 13rem;
-    bottom: -140rem;
+    width: 50%;
+    margin: auto;
     padding: 2.5rem;
     display: grid;
     grid-template-columns: auto;
@@ -709,7 +703,7 @@
       "paragraph"
       "bottom";
     row-gap: 1rem;
-
+    transform: translateY(-8rem);
     .title {
       h1 {
         font-size: 1.7rem;
@@ -726,7 +720,7 @@
 
     .bottom {
       display: grid;
-      grid-template-columns: auto 30%;
+      grid-template-columns: auto 35%;
       grid-template-rows: auto;
       grid-template-areas: "email get-started";
 
@@ -739,7 +733,7 @@
   ////////////////////// Footer
 
   .footer {
-    padding: 9rem 2.5rem 5rem 2.5rem;
+    padding: 0 2.5rem 5rem 2.5rem;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
@@ -768,11 +762,12 @@
 }
 
 @media (min-width: 1440px) {
+  ////////////////////// Early Access
+
   .early-access {
-    right: 13rem;
-    left: 13rem;
-    bottom: -148rem;
-    padding: 2.5rem 5rem;
+    width: 50%;
+    margin: auto;
+    padding: 2.5rem;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
@@ -781,24 +776,24 @@
       "paragraph"
       "bottom";
     row-gap: 1rem;
-
+    transform: translateY(-8rem);
     .title {
       h1 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
       }
     }
 
     .paragraph {
-      width: 80%;
+      width: 85%;
       justify-self: center;
       p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
     }
 
     .bottom {
       display: grid;
-      grid-template-columns: auto 25%;
+      grid-template-columns: auto 30%;
       grid-template-rows: auto;
       grid-template-areas: "email get-started";
 

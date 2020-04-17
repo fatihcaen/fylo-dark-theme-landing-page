@@ -273,7 +273,6 @@ h6 {
 ////////////////////// Early Access
 
 .early-access {
-  position: absolute;
   border-radius: 0.7rem;
   background-color: colors.$intro-bg;
   -webkit-box-shadow: 3px 5px 5px 3px rgba(6, 12, 19, 0.75);
@@ -311,7 +310,7 @@ h6 {
         &::placeholder {
           font-family: $open-sans;
           font-size: 1rem;
-          padding-left: 2.5rem;
+          padding-left: 1.5rem;
           font-size: 0.8rem;
         }
       }
