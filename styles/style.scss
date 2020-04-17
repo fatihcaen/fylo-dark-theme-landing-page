@@ -270,6 +270,68 @@ h6 {
   }
 }
 
+////////////////////// Early Access
+
+.early-access {
+  position: absolute;
+  border-radius: 0.7rem;
+  background-color: colors.$intro-bg;
+  -webkit-box-shadow: 3px 5px 5px 3px rgba(6, 12, 19, 0.75);
+  -moz-box-shadow: 3px 5px 5px 3px rgba(6, 12, 19, 0.75);
+  box-shadow: 3px 5px 5px 3px rgba(6, 12, 19, 0.75);
+
+  .title {
+    grid-area: title;
+    h1 {
+      @include font-white;
+      @include text-center;
+      margin: 0;
+    }
+  }
+
+  .paragraph {
+    grid-area: paragraph;
+    p {
+      @include font-white;
+      @include text-center;
+    }
+  }
+
+  .bottom {
+    grid-area: bottom;
+
+    .email {
+      grid-area: email;
+      input {
+        border-radius: 2rem;
+        border: none;
+        width: 100%;
+        padding: 1rem 0;
+
+        &::placeholder {
+          font-family: $open-sans;
+          font-size: 1rem;
+          padding-left: 2.5rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .get-started {
+      grid-area: get-started;
+
+      button {
+        background: colors.$gradient;
+        border: none;
+        border-radius: 3rem;
+        @include font-white;
+        padding: 1rem 2rem;
+        width: 100%;
+      }
+    }
+  }
+}
+
 ////////////////////// Footer
 
 #footer {
